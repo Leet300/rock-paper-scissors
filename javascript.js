@@ -21,7 +21,6 @@ function playGame(){
     return humanChoice.toLowerCase();
   }
 
-  //initial score at start of game.
   let humanScore = 0
   let computerScore = 0
 
@@ -30,7 +29,6 @@ function playGame(){
     let humanSelection = getHumanChoice();
     let computerSelection = getComputerChoice();
 
-    //Displays the computer and human selections
     console.log(humanSelection)
     console.log(computerSelection)
     
@@ -62,11 +60,9 @@ function playGame(){
     }
   }
 
-  //Display's final score of game.
   console.log(humanScore)
   console.log(computerScore)
 
 }
 
-//Initiates the game to start
 playGame()
