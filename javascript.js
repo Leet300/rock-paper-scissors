@@ -29,7 +29,6 @@ function playGame(){
     console.log(humanSelection)
     console.log(computerSelection)
 
-
     function playround(humanSelection, computerSelection){
       if (humanSelection == computerSelection){
         console.log('Draw, try again');}  
