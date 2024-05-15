@@ -1,5 +1,6 @@
 
 function playGame(){
+  //Random computer choice for rock, paper, or scissors.
   function getComputerChoice(){
     const computerChoice = Math.floor(Math.random() * 3);
     if (computerChoice === 0){
@@ -14,21 +15,26 @@ function playGame(){
     }
   }
   
+  //Prompt for human input of rock, paper, or scissors.
   function getHumanChoice(){
     const humanChoice = prompt('Choose rock, paper, or scissors');
     return humanChoice.toLowerCase();
-  }  
+  }
 
+  //initial score at start of game.
   let humanScore = 0
   let computerScore = 0
 
+  //Loops the game 5 times
   for (let i = 0; i < 5; i++){
     let humanSelection = getHumanChoice();
     let computerSelection = getComputerChoice();
 
+    //Displays the computer and human selections
     console.log(humanSelection)
     console.log(computerSelection)
-
+    
+    //logic behind selecting a winner for rock, paper, scissors
     function playround(humanSelection, computerSelection){
       if (humanSelection == computerSelection){
         console.log('Draw, try again');}  
@@ -55,8 +61,12 @@ function playGame(){
       } 
     }
   }
+
+  //Display's final score of game.
   console.log(humanScore)
   console.log(computerScore)
+
 }
 
+//Initiates the game to start
 playGame()
