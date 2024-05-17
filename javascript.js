@@ -7,7 +7,7 @@ function playGame(){
       let computerChoice = 'rock';
       return 'rock';
     } else if (computerChoice === 1){
-      let computerChoice = 'paper';
+      let computerChoice = 'paper';rock
       return 'paper'
     } else if (computerChoice === 2){
       let computerChoice = 'scissors';
@@ -17,7 +17,7 @@ function playGame(){
   
   //Prompt for human input of rock, paper, or scissors.
   function getHumanChoice(){
-    const humanChoice = prompt('Choose rock, paper, or scissors');
+    const humanChoice = prompt('Choose rock, paper, or scissors', "");
     return humanChoice.toLowerCase();
   }
 
