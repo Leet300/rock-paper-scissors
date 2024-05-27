@@ -144,7 +144,7 @@ humanInput.appendChild(desriptionText)
 const rock = document.createElement('button')
 rock.classList.add('rock')
 rock.value = 'rock'
-rock.da = 'button'
+rock.type = 'button'
 rock.textContent = 'Rock'
 humanInput.appendChild(rock)
 
